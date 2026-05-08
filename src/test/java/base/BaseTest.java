@@ -9,7 +9,7 @@ public class BaseTest
     protected Page page;
     
     public void setup() {
-    	browser= Playwright.create().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(2000));
+    	browser= Playwright.create().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
     	page= browser.newPage();
     }
     
